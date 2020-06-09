@@ -5,11 +5,9 @@
   <a href="/ask">Ask here</a>
   <% questions.forEach(question => { %>
     <div style="border: solid 1px black">
-      <h2>Question:</h2>
-      <p><%= question.title %></p>
-      <h2>Describe:</h2>
-      <p><%= question.describe %></p>
+      <h2><%= question.title %></h2>
     </div>
+    <a href="/ask/<%= question.id %>"><button>Answer</button></a>
   <% }) %>
 </body>
 </html>
