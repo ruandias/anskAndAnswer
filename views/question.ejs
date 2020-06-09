@@ -5,7 +5,7 @@
   <h2><%= question.title %></h2>
   <p><%= question.describe %></p>
   <hr>
-  <form>
+  <form method="POST" action="/answer">
     <h2>Answer</h2>
     <label>Answer:</label>
     <textarea placeholder="Type here your answer" name="answerBody"></textarea>

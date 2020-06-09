@@ -67,6 +67,17 @@ app.post("/savequestion", (req,res) => {
 
 });
 
+app.post("/answer", (req,res) => {
+  const answerBody = req.body.answerBody;
+  const questionId = req.body.question;
+  Answer.create({
+    answerBody: answerBody,
+    questionId: questionId
+  }).then(() => {
+    res.redirect(`/ask/${questionId}`);
+  });
+});
+
 app.listen(8080, () => {
    console.log("App rodando!"); 
 });
