@@ -2,6 +2,15 @@
 <body>
   <%- include ('./partials/navbar.ejs') %>
   <h1>Ask and Answer</h1>
+  <a href="/ask">Ask here</a>
+  <% questions.forEach(question => { %>
+    <div style="border: solid 1px black">
+      <h2>Question:</h2>
+      <p><%= question.title %></p>
+      <h2>Describe:</h2>
+      <p><%= question.describe %></p>
+    </div>
+  <% }) %>
 </body>
 </html>
 <%- include ('./partials/footer.ejs') %>
