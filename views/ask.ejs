@@ -4,9 +4,9 @@
   <h1>Ask me</h1>
   <form method="POST" action="/savequestion">
     <label>Title</label>
-    <input type="text" placeholder="Title" />
+    <input type="text" placeholder="Title" name="title"/>
     <label>Describe</label>
-    <textarea placeholder="Describe your question"></textarea>
+    <textarea placeholder="Describe your question" name="describe"></textarea>
     <button>Ask</button>
 </body>
 <%- include ('./partials/footer.ejs') %>
