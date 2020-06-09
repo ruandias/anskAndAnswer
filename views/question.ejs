@@ -4,6 +4,13 @@
   <h1>Question Page</h1>
   <h2><%= question.title %></h2>
   <p><%= question.describe %></p>
+  <hr>
+  <form>
+    <h2>Answer</h2>
+    <label>Answer:</label>
+    <textarea placeholder="Type here your answer" name="answerBody"></textarea>
+    <button type="submit">Answer</button>
+  </form>
 </body>
 </html>
 <%- include ('./partials/footer.ejs') %>
