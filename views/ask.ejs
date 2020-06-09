@@ -2,7 +2,7 @@
 <body>
   <%- include ('./partials/navbar.ejs') %>
   <h1>Ask me</h1>
-  <form>
+  <form method="POST" action="/savequestion">
     <label>Title</label>
     <input type="text" placeholder="Title" />
     <label>Describe</label>
