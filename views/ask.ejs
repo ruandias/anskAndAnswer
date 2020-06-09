@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
-  <title>Ask and Answer</title>
-</head>
+<%- include ('./partials/header.ejs') %>
 <body>
-  <h1>Ask</h1>
+  <%- include ('./partials/navbar.ejs') %>
+  <h1>Ask me</h1>
+  <form>
+    <label>Title</label>
+    <input type="text" placeholder="Title" />
+    <label>Describe</label>
+    <textarea placeholder="Describe your question"></textarea>
+    <button>Ask</button>
 </body>
-</html>
+<%- include ('./partials/footer.ejs') %>
