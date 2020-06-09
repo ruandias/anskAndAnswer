@@ -35,6 +35,19 @@ app.get("/ask", (req, res) => {
   res.render('ask');
 });
 
+app.get("/ask/:id", (req, res) => {
+  const id = req.params.id;
+  Question.findOne({
+    where: {id: id}
+  }).then(question => {
+    if(question != undefined){
+      res.render("question");
+    } else {
+      res.redirect("/");
+    }
+  });
+});
+
 app.post("/savequestion", (req,res) => {
   const question = {
     title: req.body.title,
