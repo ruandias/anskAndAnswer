@@ -12,6 +12,11 @@
     <input type="hidden" name="question" value="<%= question.id %>" />
     <button type="submit">Answer</button>
   </form>
+  <hr>
+  <h2>Answers</h2>
+  <% answers.forEach(answer => { %>
+    <%= answer.answerBody %><br>
+  <% }) %>
 </body>
 </html>
 <%- include ('./partials/footer.ejs') %>
