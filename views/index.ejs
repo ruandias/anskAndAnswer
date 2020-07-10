@@ -2,12 +2,11 @@
 <body>
   <%- include ('./partials/navbar.ejs') %>
   <h1>Ask and Answer</h1>
-  <a href="/ask">Ask here</a>
   <% questions.forEach(question => { %>
-    <div style="border: solid 1px black">
+    <div class="question-box">
       <h2><%= question.title %></h2>
     </div>
-    <a href="/ask/<%= question.id %>"><button>Answer</button></a>
+    <a href="/ask/<%= question.id %>"><button class="button">Answer</button></a>
   <% }) %>
 </body>
 </html>

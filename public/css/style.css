@@ -1,3 +1,49 @@
+*{
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Bangers', cursive;
+}
+
+body {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+nav {
+  background-color: #7941ce;
+}
+
+nav a {
+  color: #fff;
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
 h1 {
-  color: red;
+  color: rgb(19, 17, 17);
+}
+
+.question-box {
+  border: solid 1px #7941ce;
+}
+
+
+button {
+  background-color: #7941ce;
+  border: none;
+  color: white;
+  padding: 2px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+  
+button:focus {
+  outline: #fff 5px auto;
 }
